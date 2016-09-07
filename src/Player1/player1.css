@@ -1,0 +1,35 @@
+
+.anchorPane {
+    -fx-background-image: url("yo.jpg");
+    -fx-background-size:  cover; 
+       
+}
+.customText{
+    
+   -fx-text-fill:#ea3d0e;
+}
+
+.customButtonBorder{
+    -fx-border-width: 5px;
+}
+.noBorder{
+    -fx-border-width: 0px;
+}
+.red{
+    -fx-text-fill:#ea3d0e;
+}
+.green{
+    -fx-text-fill: LIME;
+}
+.black{
+    -fx-text-fill:#000000;
+}
+.cyan{
+    -fx-text-fill: #00ffc7;
+}
+.purple{
+    -fx-text-fill:  #ff66ff;
+}
+.blue{
+    -fx-text-fill: blue;
+}

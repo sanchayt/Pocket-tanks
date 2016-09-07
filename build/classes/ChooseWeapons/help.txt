@@ -1,0 +1,3 @@
+Arraylist with all he buttons 
+and whichever is clicked should be visible
+nd other invisible.

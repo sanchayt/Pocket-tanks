@@ -1,0 +1,20 @@
+.anchorPane{
+    -fx-background-image: url("yo.jpg");
+    -fx-background-size:  cover; 
+}
+#customHover{
+    -fx-background-color:transparent;
+    -fx-border-radius:100;
+    -fx-border-color:blue;
+    -fx-border-width:4;
+    -fx-font-weight:bold; 
+    
+}
+#customHoverDown{
+    -fx-background-color:transparent;
+    -fx-border-radius:100;
+    -fx-border-color:blue;
+    -fx-border-width:4;
+    -fx-font-weight: normal; 
+    
+}

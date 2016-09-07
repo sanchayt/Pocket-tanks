@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchorPane" prefHeight="800.0" prefWidth="1000.0" styleClass="anchorPane" stylesheets="@player1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Player1.Player1Controller">
+   <children>
+      <Button fx:id="red" layoutX="180.0" layoutY="420.0" mnemonicParsing="false" onAction="#red" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: red; -fx-border-color: darkorange;" styleClass="customButtonBorder" stylesheets="@player1.css">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="blue" layoutX="300.0" layoutY="420.0" mnemonicParsing="false" onAction="#blue" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: blue; -fx-border-color: darkorange;" styleClass="noBorder" stylesheets="@player1.css">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="cyan" layoutX="420.0" layoutY="420.0" mnemonicParsing="false" onAction="#cyan" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: #00ffc7; -fx-border-color: darkorange;" styleClass="noBorder" stylesheets="@player1.css" textFill="#00ffc7">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="black" layoutX="540.0" layoutY="420.0" mnemonicParsing="false" onAction="#black" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: black; -fx-border-color: darkorange;" styleClass="noBorder" stylesheets="@player1.css">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="green" layoutX="660.0" layoutY="420.0" mnemonicParsing="false" onAction="#green" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: LIME; -fx-border-color: darkorange;" styleClass="noBorder" stylesheets="@player1.css" textFill="LIME">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="purple" layoutX="791.0" layoutY="420.0" mnemonicParsing="false" onAction="#purple" prefHeight="51.0" prefWidth="54.0" style="-fx-background-color: #cc00ff; -fx-border-color: darkorange;" styleClass="noBorder" stylesheets="@player1.css" textFill="#a11ba1">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <TextField fx:id="name" layoutX="507.0" layoutY="205.0" prefHeight="74.0" prefWidth="361.0" style="-fx-background-color: transparent; -fx-letter-spacing: 0.5;" styleClass="customText" text="Player1_">
+         <font>
+            <Font name="Cowboys" size="39.0" />
+         </font>
+         <effect>
+            <Glow level="0.0">
+               <input>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#c36818" height="35.7" radius="20.285" width="47.44" />
+               </input></Glow>
+         </effect>
+      </TextField>
+      <Label layoutX="314.0" layoutY="211.0" text="NAME :">
+         <font>
+            <Font name="AR DARLING" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8428571428571427" endY="0.24761904761904763" startY="0.6904761904761905">
+               <stops>
+                  <Stop color="#b2995f" />
+                  <Stop color="#ff8800" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="314.0" layoutY="296.0" text="Colour :">
+         <font>
+            <Font name="AR DARLING" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8428571428571427" endY="0.24761904761904763" startY="0.6904761904761905">
+               <stops>
+                  <Stop color="#b2995f" />
+                  <Stop color="#ff8800" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="colour" layoutX="540.0" layoutY="300.0" prefHeight="58.0" prefWidth="263.0" text="RED" textFill="#ea3d0e">
+         <font>
+            <Font name="Cowboys" size="42.0" />
+         </font>
+         <effect>
+            <Glow level="0.0">
+               <input>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#d76a1d" height="32.864999999999995" radius="15.191249999999998" spread="0.11" width="29.9" />
+               </input>
+            </Glow>
+         </effect>
+      </Label>
+      <Label layoutX="320.0" layoutY="60.0" text="Player 1" textFill="#eb8f0e">
+         <font>
+            <Font name="Chlorinar" size="96.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="image" layoutX="580.0" layoutY="549.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tankRedS.png" />
+               </image>
+            </ImageView>
+         </children></StackPane>
+      <Button fx:id="continueB" alignment="CENTER" layoutX="731.0" layoutY="691.0" mnemonicParsing="false" onAction="#openPlayer2" style="-fx-background-color: transparent;" text="Continue">
+         <font>
+            <Font name="Georgia Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#ff7700" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="813.0" prefWidth="1051.0" styleClass="anchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseWeapons.WeaponsChooseController">
+    <stylesheets>
+        <URL value="@weaponschoose.css" />
+    </stylesheets>
+   <children>
+      <VBox fx:id="player1Box" layoutX="20.0" layoutY="168.0" prefHeight="295.0" prefWidth="355.0" style="-fx-border-width: 5; -fx-border-radius: 10;" styleClass="red" stylesheets="@weaponschoose.css">
+         <children>
+            <FlowPane fx:id="weaponsP10" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP11" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP12" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP13" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP14" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <VBox fx:id="weapons" layoutX="387.0" layoutY="99.0" prefHeight="645.0" prefWidth="305.0">
+         <children>
+            <FlowPane fx:id="weapons0" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/moltenplastic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon0click" style="-fx-background-color: transparent;" text="Hail Storm" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons1" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/pineapple.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon1click" style="-fx-background-color: transparent;" text="Pineapple" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons2" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/singleshot.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon2click" style="-fx-background-color: transparent;" text="Small shot" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons3" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/skipper.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon3click" style="-fx-background-color: transparent;" text="Skipper" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons4" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/bigshot.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#weapon4click" style="-fx-background-color: transparent;" text="Big Shot" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons5" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/firecracker.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon5click" style="-fx-background-color: transparent;" text="FireCracker" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons6" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/jackhammer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon6click" style="-fx-background-color: transparent;" text="Jackhammer" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons7" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/napalm.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon7click" style="-fx-background-color: transparent;" text="Napalm" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons8" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@../Images/cruiser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#weapon8click" style="-fx-background-color: transparent;" text="Cruiser" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weapons9" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/chainreaction.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#weapon9click" style="-fx-background-color: transparent;" text="Chain Reaction" textFill="#c9c7c7e0">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <VBox fx:id="player2Box" layoutX="692.0" layoutY="168.0" prefHeight="295.0" prefWidth="335.0" style="-fx-border-width: 5; -fx-border-radius: 10;" styleClass="black">
+         <children>
+            <FlowPane fx:id="weaponsP20" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP21" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP22" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP23" prefHeight="42.0" prefWidth="242.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="weaponsP24" prefHeight="48.0" prefWidth="275.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="93.0" style="-fx-background-color: transparent;" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="#aea6a6">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <Label fx:id="player1Lbl" layoutX="20.0" layoutY="119.0" style="-fx-border-width: 0;" text="Player 1" textFill="#cd2a2a">
+         <font>
+            <Font name="Constantia" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Lbl" layoutX="692.0" layoutY="119.0" style="-fx-border-width: 0;" text="Player 2" textFill="#8a7b7b">
+         <font>
+            <Font name="Constantia" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="14.0" text="Weapon Select" textFill="#ff9500">
+         <font>
+            <Font name="Chlorinar" size="75.0" />
+         </font>
+      </Label>
+      <Button layoutX="397.0" layoutY="714.0" mnemonicParsing="false" onAction="#random" prefHeight="57.0" prefWidth="206.0" styleClass="random" stylesheets="@weaponschoose.css" text="Random">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         
+      </Button>
+      <Button fx:id="continueB" alignment="CENTER" layoutX="749.0" layoutY="704.0" mnemonicParsing="false" onAction="#openGameStage" style="-fx-background-color: transparent;" text="Continue">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <font>
+            <Font name="Georgia Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#f5a000" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

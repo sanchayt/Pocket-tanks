@@ -1,0 +1,30 @@
+.anchorPane{
+    -fx-background-image:  url("../Images/back.jpg");
+    -fx-background-size:   stretch; 
+}
+
+.red{
+
+    -fx-text-fill:#ea3d0e;
+}
+.black{
+
+    -fx-text-fill: #8a7b7b;
+}
+.green{
+
+    -fx-text-fill: LIME;
+}
+.purple{
+
+
+    -fx-text-fill: #ff66ff;
+}
+.blue{
+
+    -fx-text-fill: blue;
+}
+.cyan{
+
+    -fx-text-fill: #00ffc7;
+}

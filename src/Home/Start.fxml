@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="back" onKeyPressed="#keyEvents" prefHeight="800.0" prefWidth="1000.0" styleClass="anchorPane" stylesheets="@start.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.StartController">
+   <children>
+      <Button fx:id="inst" alignment="CENTER" layoutX="349.0" layoutY="363.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Instructions">
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#e57512fe" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="63.0" layoutY="655.0" minHeight="50.0" minWidth="200.0" prefHeight="73.0" prefWidth="208.0" text="Sound">
+         <font>
+            <Font name="Forte" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#e57512fe" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="sound" layoutX="271.0" layoutY="663.0" mnemonicParsing="false" onAction="#functionSound" prefHeight="41.0" prefWidth="47.0" style="-fx-border-color: orange; -fx-border-width: 5; -fx-background-color: transparent;" />
+      <Button fx:id="exit" alignment="CENTER" layoutX="763.0" layoutY="637.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" text="Exit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#e57512fe" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="play" alignment="CENTER" layoutX="305.0" layoutY="229.0" mnemonicParsing="false" onAction="#playGame" style="-fx-background-color: transparent; -fx-border-radius: 100; -fx-border-color: blue; -fx-border-width: 4;" text="Play game">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Forte" size="66.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.6190476190476191" startX="1.0">
+               <stops>
+                  <Stop color="#f2eeebf5" />
+                  <Stop color="#e57512fe" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="242.0" layoutY="30.0" prefHeight="127.0" prefWidth="594.0" text="Pocket tanks" textFill="#a6941f">
+         <font>
+            <Font name="Chlorinar" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
